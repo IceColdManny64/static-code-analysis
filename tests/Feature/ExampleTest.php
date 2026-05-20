@@ -14,7 +14,7 @@ class ExampleTest extends TestCase
     public function test_addition_result(): void
     {
         $controller = new OperationsController;
-        
+
         $result = $controller->addition(4, 9);
         $this->assertEquals(13, $result);
         $this->assertIsInt($result);
